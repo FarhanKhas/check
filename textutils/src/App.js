@@ -1,4 +1,5 @@
 import { useState } from "react";
+import About from "./components/About"
 import Navbar from "./components/Navbar"
 import Textform from "./components/Textform"
 import Alert from "./components/Alert";
@@ -45,6 +46,8 @@ function App() {
     <div className="container">
     <Textform showAlert={showAlert} heading = "Enter your text below" mode={mode}/>
     </div>
+    <About mode={mode} />
+    
     
     </>
   )
